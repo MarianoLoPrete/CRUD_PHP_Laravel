@@ -16,7 +16,7 @@ class EmpleadosController extends Controller
     public function index()
     {
         //Metodo paginador que limita la vista de 5 elementos de lista
-        $datos['empleados']=Empleados::paginate(1);
+        $datos['empleados']=Empleados::paginate(6);
 
         return view('empleados.index',$datos);
     }

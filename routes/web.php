@@ -27,5 +27,5 @@ Route::resource('empleados', 'EmpleadosController')->middleware(('auth'));
 
 Auth::routes(['register'=>false,'reset'=>false]);
 
-Route::get('/home', 'EmpleadosController@index')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 
